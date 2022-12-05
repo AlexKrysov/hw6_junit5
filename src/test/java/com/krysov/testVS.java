@@ -1,5 +1,6 @@
 package com.krysov;
 
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -12,6 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class testVS {
     @BeforeAll
     static void setUp() {
+        Configuration.browserSize = "1920x1080";
         open("https://www.sportmaster.ru/");
       $(".sm-header__catalog").$(byText("ВИДЫ СПОРТА")).click();
 
