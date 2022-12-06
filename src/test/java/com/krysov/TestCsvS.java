@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
-public class testCsvS extends TestBase{
+public class TestCsvS extends TestBase{
 
     @CsvSource({
             "шапки, Выбрать магазин",

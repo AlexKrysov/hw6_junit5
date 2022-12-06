@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class testMS{
+public class TestMS {
     @BeforeAll
     static void setUp() {
         Configuration.browserSize = "1920x1080";
